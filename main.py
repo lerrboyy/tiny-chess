@@ -87,7 +87,7 @@ def E(b,w,c,e):
 T={}
 def S(b,w,c,e,d,a,B,p):
  global D;D+=1
- if D>50000:1/0
+ if D>10000:1/0
  if d<=0:return Q(b,w,c,e,a,B,p)
  k=(tuple(b),w,c,e);z=T.get(k)
  if z and z[0]>=d and (z[2]==0 or z[2]==1 and z[1]>=B or z[2]==2 and z[1]<=a):return z[1]
@@ -104,7 +104,7 @@ def S(b,w,c,e,d,a,B,p):
  return be
 def Q(b,w,c,e,a,B,p):
  global D;D+=1
- if D>50000:1/0
+ if D>10000:1/0
  i=A(b,K(b,w),-w);mv=L(b,w,c,e)
  if not mv:return -20000+p if i else 0
  s=E(b,w,c,e)
